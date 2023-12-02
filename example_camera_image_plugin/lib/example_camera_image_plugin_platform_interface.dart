@@ -1,3 +1,4 @@
+import 'package:camera/camera.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'example_camera_image_plugin_method_channel.dart';
@@ -17,7 +18,14 @@ abstract class ExampleCameraImagePluginPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
-  }
+  /// Starts recording a video
+  Future<void> startRecordingVideo();
+
+  /// Stops recording a video
+  ///
+  /// Returns a [String] path where the resulting video is located
+  Future<String?> stopRecording();
+
+  /// Appends a [CameraImage] frame to the video
+  Future<void> appendCameraImageToVideo(CameraImage image);
 }
