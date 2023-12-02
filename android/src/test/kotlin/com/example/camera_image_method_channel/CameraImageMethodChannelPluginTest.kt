@@ -1,4 +1,4 @@
-package com.example.camera_image_method_channel
+package nz.jamiewalker.camera_image_method_channel
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel

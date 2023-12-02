@@ -1,4 +1,4 @@
-package com.example.camera_image_method_channel
+package nz.jamiewalker.camera_image_method_channel
 
 import androidx.annotation.NonNull
 
