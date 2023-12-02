@@ -12,6 +12,7 @@ dependencies:
     path: ../
   cupertino_icons: ^1.0.2
   camera: ^0.10.5+5
+  share_plus: ^7.2.1
 
 dev_dependencies:
   integration_test:
